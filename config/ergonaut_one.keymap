@@ -20,7 +20,7 @@
         compatible = "zmk,conditional-layers";
 
         tri-layer {
-            if-layers = <1 2>;
+            if-layers = <2 3>;
             then-layer = <4>;
         };
     };
@@ -31,18 +31,18 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&kp TAB     &kp Q             &kp W           &kp E               &kp R           &kp T    &kp Y                &kp U            &kp I                &kp O            &kp P                 &kp BACKSPACE
-&caps_word  &mt LEFT_SHIFT A  &mt LEFT_GUI S  &mt LEFT_CONTROL D  &mt LEFT_ALT F  &kp G    &kp H                &mt RIGHT_ALT J  &mt RIGHT_CONTROL K  &mt RIGHT_GUI L  &mt RIGHT_SHIFT SEMI  &kp DELETE
-&mo 3       &kp Z             &kp X           &kp C               &kp V           &kp B    &kp N                &kp M            &kp COMMA            &kp DOT          &kp FSLH              &kp RIGHT_SHIFT
-                                              &lt 2 ESCAPE        &kp BACKSPACE   &kp TAB  &mt RIGHT_ALT ENTER  &lt 1 SPACE      &lt 2 DELETE
+&kp TAB     &kp Q             &kp W           &kp E               &kp R           &kp T    &kp Y                &kp U           &kp I                &kp O            &kp P                 &kp LS(TAB)
+&caps_word  &mt LEFT_SHIFT A  &mt LEFT_GUI S  &mt LEFT_CONTROL D  &mt LEFT_ALT F  &kp G    &kp H                &mt LEFT_ALT J  &mt RIGHT_CONTROL K  &mt RIGHT_GUI L  &mt RIGHT_SHIFT SEMI  &kp SQT
+&mo 3       &kp Z             &kp X           &kp C               &kp V           &kp B    &kp N                &kp M           &kp COMMA            &kp DOT          &kp FSLH              &lt 3 GRAVE
+                                              &lt 2 ESCAPE        &kp BACKSPACE   &kp TAB  &mt RIGHT_ALT ENTER  &lt 1 SPACE     &lt 2 DELETE
             >;
         };
 
         nav {
             bindings = <
-&trans  &trans          &trans        &trans            &trans        &trans  &kp K_REDO       &kp K_PASTE  &kp K_COPY     &kp K_CUT       &kp K_UNDO  &trans
-&trans  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &kp CAPSLOCK     &kp LEFT     &kp DOWN       &kp DOWN_ARROW  &kp RIGHT   &trans
-&trans  &trans          &trans        &trans            &trans        &trans  &kp PRINTSCREEN  &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP     &kp END     &trans
+&trans  &trans          &trans        &trans            &trans        &trans  &kp K_REDO       &kp K_PASTE  &kp K_COPY     &kp K_CUT     &kp K_UNDO  &trans
+&trans  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &kp CAPSLOCK     &kp LEFT     &kp DOWN       &kp UP_ARROW  &kp RIGHT   &trans
+&trans  &trans          &trans        &trans            &trans        &trans  &kp PRINTSCREEN  &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP   &kp END     &trans
                                       &trans            &trans        &trans  &trans           &trans       &trans
             >;
 
@@ -60,7 +60,7 @@
 
         media {
             bindings = <
-&trans  &trans             &trans           &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans             &trans           &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_SLEEP_MODE
 &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp C_PLAY_PAUSE   &kp C_PREVIOUS   &kp C_NEXT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                             &trans      &trans  &trans  &trans  &trans  &trans
