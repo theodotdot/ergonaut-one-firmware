@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - Win Prev
-  - '&caps_word_ergol'
+  - {t: gaming, h: toggle}
   - {t: A, h: LEFT SHIFT}
   - {t: S, h: LEFT GUI}
   - {t: D, h: LEFT CONTROL}
@@ -48,7 +48,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&caps_word_ergol'
   - REDO
   - PASTE
   - COPY
@@ -212,6 +212,49 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  gaming:
+  - F1
+  - ESCAPE
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - F2
+  - LEFT CONTROL
+  - A
+  - S
+  - D
+  - F
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - {t: gaming, h: toggle}
+  - F3
+  - LEFT SHIFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - Alt
+  - ␣
+  - ␣
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
