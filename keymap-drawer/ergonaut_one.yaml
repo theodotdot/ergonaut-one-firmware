@@ -13,7 +13,7 @@ layers:
   - P
   - Win Prev
   - {t: gaming, h: toggle}
-  - {t: A, h: LEFT SHIFT}
+  - A
   - {t: S, h: LEFT GUI}
   - {t: D, h: LEFT CONTROL}
   - {t: F, h: LEFT ALT}
@@ -22,7 +22,7 @@ layers:
   - {t: J, h: LEFT ALT}
   - {t: K, h: RIGHT CONTROL}
   - {t: L, h: RIGHT GUI}
-  - {t: ;, h: RIGHT SHIFT}
+  - ;
   - ''''
   - media
   - Z
