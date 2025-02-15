@@ -260,3 +260,7 @@ layers:
 combos:
 - p: [38, 16]
   k: Alt+↹
+  l: [MAIN]
+- p: [19, 20]
+  k: ENTER
+  l: [MAIN]

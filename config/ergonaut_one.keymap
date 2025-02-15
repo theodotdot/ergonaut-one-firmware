@@ -7,10 +7,13 @@
 #define RSE 2
 #define ADJ 3
 
-&lt { quick-tap-ms = <200>; };
+&lt {
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <125>;
+};
 
 &mt {
-    quick-tap-ms = <200>;
+    quick-tap-ms = <175>;
     flavor = "balanced";
     require-prior-idle-ms = <125>;
 };
@@ -31,6 +34,14 @@
         alt_tab {
             bindings = <&kp LA(TAB)>;
             key-positions = <38 16>;
+            layers = <0>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <19 20>;
+            require-prior-idle-ms = <125>;
+            layers = <0>;
         };
     };
 
