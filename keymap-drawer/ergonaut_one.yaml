@@ -1,6 +1,7 @@
+layout: {zmk_keyboard: ergonaut_one}
 layers:
   MAIN:
-  - ↹
+  - ''
   - Q
   - W
   - E
@@ -11,9 +12,9 @@ layers:
   - I
   - O
   - P
-  - Win Prev
+  - ''
   - {t: gaming, h: toggle}
-  - A
+  - {t: A, h: Shift}
   - {t: S, h: LEFT GUI}
   - {t: D, h: LEFT CONTROL}
   - {t: F, h: LEFT ALT}
@@ -23,8 +24,8 @@ layers:
   - {t: K, h: RIGHT CONTROL}
   - {t: L, h: RIGHT GUI}
   - ;
-  - ''''
-  - media
+  - ''
+  - ''
   - Z
   - X
   - C
@@ -35,13 +36,13 @@ layers:
   - ','
   - .
   - /
-  - {t: '`', h: media}
-  - {t: ESCAPE, h: num_fun}
+  - ''
+  - ''
   - {t: BACKSPACE, h: LEFT SHIFT}
-  - {t: ↹, h: RIGHT ALT}
-  - {t: ENTER, h: RIGHT ALT}
+  - {t: ↹, h: num_fun}
+  - {t: DELETE, h: RIGHT ALT}
   - {t: ␣, h: nav}
-  - {t: DELETE, h: num_fun}
+  - ''
   nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -60,7 +61,7 @@ layers:
   - LEFT GUI
   - LEFT CONTROL
   - LEFT ALT
-  - {t: ▽, type: trans}
+  - VOLUME UP
   - CAPSLOCK
   - ←
   - ↓
@@ -68,11 +69,11 @@ layers:
   - →
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PLAY PAUSE
+  - PREVIOUS
+  - ⏭️
+  - MUTE
+  - VOLUME DOWN
   - PRINTSCREEN
   - Home
   - PAGE DOWN
@@ -81,7 +82,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Win Prev
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -122,58 +123,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  media:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - SLEEP MODE
-  - {t: ▽, type: trans}
-  - VOLUME DOWN
-  - VOLUME UP
-  - MUTE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - PLAY PAUSE
-  - PREVIOUS
-  - ⏭️
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   BT:
   - Boot
-  - '&studio_unlock'
   - ''
   - ''
   - ''
@@ -182,7 +139,8 @@ layers:
   - ''
   - ''
   - ''
-  - '&studio_unlock'
+  - ''
+  - ''
   - Boot
   - BT CLR
   - BT 1
@@ -196,7 +154,7 @@ layers:
   - BT 2
   - BT 1
   - BT CLR
-  - {t: Reset, type: held}
+  - Reset
   - ''
   - ''
   - ''
@@ -208,11 +166,11 @@ layers:
   - ''
   - ''
   - Reset
+  - {t: ▽, type: trans}
+  - ''
   - {type: held}
   - ''
-  - {t: ▽, type: trans}
-  - ''
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   gaming:
   - F1
@@ -264,3 +222,15 @@ combos:
 - p: [19, 20]
   k: ENTER
   l: [MAIN]
+- p: [16, 15]
+  k: ESCAPE
+  l: [MAIN]
+- p: [8, 9]
+  k: ''''
+  l: [MAIN]
+- p: [32, 33]
+  k: '`'
+  l: [MAIN]
+- p: [2, 3]
+  k: SLEEP
+  l: [nav]
