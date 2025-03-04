@@ -53,14 +53,14 @@
 
         apostrophe {
             bindings = <&kp APOSTROPHE>;
-            key-positions = <8 9>;
+            key-positions = <8 7>;
             require-prior-idle-ms = <125>;
             layers = <0>;
         };
 
         grave {
             bindings = <&kp GRAVE>;
-            key-positions = <32 33>;
+            key-positions = <32 31>;
             require-prior-idle-ms = <125>;
             layers = <0>;
         };
